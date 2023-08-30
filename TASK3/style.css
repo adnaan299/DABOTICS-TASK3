@@ -1,0 +1,95 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/wave_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: system-ui, sans-serif;
+}
+
+.maindiv {
+  margin-top: 50px;
+  width: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading>h1 {
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#input {
+  width: calc(100% - 100px);
+  height: 70px;
+  border-radius: 8px;
+  border: rgba(0, 0, 0, 0.436);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.436);
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+  color: white;
+  font-family: system-ui;
+}
+
+/* #input:focus{ box-shadow: none; border: 2px solid rgba(0, 0, 0, 0.436); } */
+#input::placeholder {
+  text-align: center;
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-weight: bolder;
+}
+
+#input:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+  color: white;
+}
+
+.qrbox {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(48, 52, 56));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+img {
+  display: none;
+}
+
+button {
+  width: 120px;
+  height: 70px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.436);
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+  color: white;
+}
